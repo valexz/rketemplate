@@ -3,8 +3,8 @@
 {{end}}
 secret: {{.EtcdKey}}
 
-folder: {{.S3Data.folderName}}
-accessKey: {{.S3Data.s3Cred.accessKey}}
-secretKey: {{.S3Data.s3Cred.secretKey}}
-endpoint: {{.S3Data.endpointName}}
+folder: {{.S4Data.folderName}}
+accessKey: {{.S4Data.s3Cred.accessKey}}
+secretKey: {{.S4Data.s3Cred.secretKey}}
+endpoint: {{.S4Data.endpointName}}
 
