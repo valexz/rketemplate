@@ -3,7 +3,7 @@
 {{end}}
 secret: {{.EtcdKey}}
 
-accessKey: {{.S3Data}}
+accessKey: {{.S3Data.zone}}
 //.s3Cred.accessKey}}
 
 
