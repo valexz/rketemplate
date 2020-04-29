@@ -2,3 +2,9 @@
 {{.}}
 {{end}}
 secret: {{.EtcdKey}}
+
+folder: {{S3Data.folderName}}
+accessKey: {{S3Data.s3Cred.accessKey}}
+secretKey: {{S3Data.s3Cred.secretKey}}
+endpoint: {{S3Data.endpointName}}
+
