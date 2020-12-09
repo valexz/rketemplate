@@ -1,17 +1,4 @@
-#
-answers: {}
-default_pod_security_policy_template_id: restricted
-docker_root_dir: /data/docker
-enable_cluster_alerting: true
-enable_cluster_monitoring: true
-enable_network_policy: false
-local_cluster_auth_endpoint:
-  enabled: false
-name: msk-p3-dm-cep
-#
-# Rancher Config
-#
-rancher_kubernetes_engine_config:
+---
   addon_job_timeout: 30
   authentication:
     strategy: x509
