@@ -1,4 +1,3 @@
-Cluster Config
 #
 answers: {}
 default_pod_security_policy_template_id: restricted
