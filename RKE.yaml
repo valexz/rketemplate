@@ -1,6 +1,6 @@
 ---
   addon_job_timeout: 31
-  ignore_docker_version: flase
+  ignore_docker_version: false
 #
 # # Currently only nginx ingress provider is supported.
 # # To disable ingress controller, set `provider: none`
