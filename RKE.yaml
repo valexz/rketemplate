@@ -1,6 +1,6 @@
 ---
-  addon_job_timeout: 30
-  ignore_docker_version: true
+  addon_job_timeout: 31
+  ignore_docker_version: flase
 #
 # # Currently only nginx ingress provider is supported.
 # # To disable ingress controller, set `provider: none`
@@ -56,7 +56,7 @@
   services:
     etcd:
       backup_config:
-        enabled: true
+        enabled: false
         interval_hours: 12
         retention: 6
         s3_backup_config:
@@ -103,7 +103,7 @@
           TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,TLS_RSA_WITH_AES_256_GCM_SHA384,TLS_RSA_WITH_AES_128_GCM_SHA256
       extra_binds:
         - '/lib/modules:/lib/modules'
-      fail_swap_on: false
+      fail_swap_on: true
     kubeproxy: {}
     scheduler:
       extra_args:
