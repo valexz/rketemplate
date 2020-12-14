@@ -1,19 +1,4 @@
-# 
-# Cluster Config
-# 
-answers: {}
-description: omegaml cluster
-docker_root_dir: /var/lib/docker
-enable_cluster_alerting: false
-enable_cluster_monitoring: false
-enable_network_policy: false
-local_cluster_auth_endpoint:
-  enabled: true
-name: om-test
-# 
-# Rancher Config
-# 
-rancher_kubernetes_engine_config:
+---
   addon_job_timeout: 30
   authentication:
     strategy: x509|webhook
